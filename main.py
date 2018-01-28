@@ -108,7 +108,7 @@ def check_room_availability():
 def booking():
     #function to reply for queries about bookings
     global total
-    if 'booking' in tokens:
+    if 'booking' in tokens or 'reservations' in tokens:
         rep=("Goto www.ABChotels.com/booking.html\nTo check availability kindly type the date in dd 'month name' yyyy format.")
         l2.configure(text=rep)
         total=1
